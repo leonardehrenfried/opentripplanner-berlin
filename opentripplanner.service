@@ -1,0 +1,13 @@
+[Unit]
+Description=Opentripplanner instance for the Berlin-Brandenburg region
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/root/opentripplanner-berlin
+ExecStart=make run
+Restart=on-failure # or always, on-abort, etc
+
+[Install]
+WantedBy=multi-user.target
