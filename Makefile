@@ -1,6 +1,7 @@
 install: otp.jar graphs/berlin/berlin-brandenburg.pbf graphs/berlin/vbb-gtfs.zip
 
 graphs/berlin/berlin-brandenburg.pbf:
+	mkdir -p graphs/berlin
 	wget http://download.geofabrik.de/europe/germany/brandenburg-latest.osm.pbf -O graphs/berlin/berlin-brandenburg.pbf
 
 graphs/berlin/vbb-gtfs.zip:
