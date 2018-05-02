@@ -1,0 +1,5 @@
+{
+  "stationTransfers": true,
+  "parentStopLinking": true,
+  "useTransfersTxt": true
+}
