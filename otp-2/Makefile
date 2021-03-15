@@ -27,6 +27,5 @@ run-%: otp.jar
 	java -Xmx6G -jar otp.jar --load --serve $*
 
 clean:
-	rm -rf berlin/
-	rm -rf stuttgart/
-	rm -rf *.jar
+	rm -rf berlin/*.obj
+	rm -rf stuttgart/*.obj
