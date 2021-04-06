@@ -24,7 +24,7 @@ build-%: otp.jar %/osm.pbf %/gtfs.zip
 	java -Xmx6G -jar otp.jar --build --save $*
 
 run-%: otp.jar
-	java -Xmx6G -jar otp.jar --load --serve $*
+	java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=1044 -jar otp.jar --load --serve $*
 
 clean:
 	rm -rf berlin/*.obj
