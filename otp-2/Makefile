@@ -24,6 +24,13 @@ norway/osm.pbf:
 norway/gtfs.zip:
 	echo "No Norway GTFS yet!"
 
+oxford/osm.pbf:
+	mkdir -p oxford
+	${WGET} http://download.geofabrik.de/europe/great-britain/england/oxfordshire-latest.osm.pbf -O $@
+
+oxford/gtfs.zip:
+	echo "No Oxford GTFS yet!"
+
 otp.jar:
 	${WGET} https://leonard.io/otp-2-shaded-2.1.0-SNAPSHOT.jar -O $@
 
